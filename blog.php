@@ -13,7 +13,7 @@ session_start();
 	if($_POST){
 		if($_POST['logout']=="yes"){
 			session_destroy();
-		}
+		} //checking github
 	}
 	if(isset($_SESSION['user']))
 	{
