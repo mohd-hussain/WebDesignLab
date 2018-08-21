@@ -10,7 +10,7 @@ $(function() {
 	});
 
 	$('#sname').on('keypress',function(e){
-		if(/[^a-zA-Z]/.test(e.key)){
+		if(/([A-Z-])\w+/.test(e.key)){
 			alert("Invalid name only alphabets are allowed");
 			this.value="";
 			$(this).focus();

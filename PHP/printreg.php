@@ -4,14 +4,18 @@
 	<title>Your Registration Info</title>
 
 	<style>
-		<table{
+		table{
 			border: 2px solid black;
+			margin-top: 50px;
 		}
 		table td{
-			padding:2px;
+			padding:4px;
 		}
 		table tr:nth-child(odd){
-			background-color: yellow: 
+			background-color:#e1a45f;}
+
+		table tr:nth-child(even){
+			background-color:#8f94a0;  
 		}
 	</style>
 </head>
@@ -30,9 +34,9 @@ if($_POST){
 	$dept=$_POST['dept'];
 	$batch=$_POST['batch'];
 	if(!empty($rollno)&&!empty($name)&&!empty($gender)&&!empty($address)&&!empty($dob)&&!empty($sem)&&!empty($semail)&&!empty($dept)&&!empty($batch)){
-?>
-		<table>
-			<tr>
+    ?>
+		<table align="center">
+			<tr> 
 				<td>Roll NO</td>
 				<td><?php echo fix_rollno($rollno); ?></td>
 			</tr>
@@ -56,7 +60,7 @@ if($_POST){
 
 			<tr>
 				<td>DOB</td>
-				<td><?php echo dob; ?></td>
+				<td><?php echo $dob; ?></td>
 			</tr>
 
 			<tr>
@@ -80,14 +84,14 @@ if($_POST){
 
 	else{
 		echo "<span>something is missing!</span>";
-		header('Refresh, url=../registration.html');
+		header('Refresh:2, url=../registration.html');
 	}
 }
 else{
-	header('0, url=registration.html');
+	header('0, url=../registration.html');
 }
 
- ?>
+?>
 
 
 </body>
