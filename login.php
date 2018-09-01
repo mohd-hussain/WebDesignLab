@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<?php session_start(); ?>
+ <?php session_start(); ?>
 <html>
 <head>
 	<title>Login Page</title>
@@ -10,6 +10,8 @@
 			border:1px solid black;
 			border-radius:5px;
 			padding:10px;
+			color: black;
+			background-color: blue;
 		}
 		#login-box>input{
 			display: block;
@@ -22,10 +24,13 @@
 			text-align: center;
 			margin-bottom: 10px;
 		}
+		body{
+			background-image: url("img/arrangement.jpg");
+		}
 	</style>
 </head>
 <body>
-
+	
 	<?php 
 
 			if($_POST){
@@ -42,10 +47,11 @@
 
 				}
 				else{
-					echo '<span>Incorrect username or password!</span>';
+					echo '<span>Incorrect username or password!</span>'; 
 				}
 			}
 			?>
+		<div class="main">	
 			<form method="post" action="login.php">
 		<div id="login-box">
 			<span>Log In</span>
@@ -54,6 +60,10 @@
 			<input type="submit" value="Log In">
 		</div>
 	</form>
+
+		
+	</div>
+
 </body>
 </html>
 

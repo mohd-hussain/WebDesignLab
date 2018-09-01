@@ -1,9 +1,9 @@
 <!DOCTYPE html>
+
 <?php
 
 session_start();
 ?>
-
 <html>
 <head>
 	<title>My BLog page</title>
@@ -13,7 +13,7 @@ session_start();
 	if($_POST){
 		if($_POST['logout']=="yes"){
 			session_destroy();
-		} //checking github
+		} 
 	}
 	if(isset($_SESSION['user']))
 	{
