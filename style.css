@@ -10,13 +10,13 @@ header > nav ul {
 	background-color: #4f4f4f;
     margin: 0;
     text-align:center;
-    color: #ffffff;
     font-size: 18pt;
 }
 
 header > nav ul li > a
 {
 text-decoration: none;
+    color: #ffffff;
 }
 
 header > nav ul li{
