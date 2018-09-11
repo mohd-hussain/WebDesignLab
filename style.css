@@ -3,11 +3,12 @@ body{
 	margin: 0;
 	font-size: 16pt;
 	font-family: sans-serif;
+	background-color:#8f94a0;  
 }
 
 header > nav ul {
 	list-style: none;
-	background-color: #4f4f4f;
+	background-color:#e1a45f;
     margin: 0;
     text-align:center;
     font-size: 18pt;
@@ -106,13 +107,13 @@ footer>div{
 }
 
 .gallery figure {
-	border: 1px solid black;
-	position: relative;
-	float: left;
-	padding: 5px;
-	margin: 10px ;
+	display: grid;
+	grid-template-columns:repeat(3,1em);
+	grid-gap: 1em;
+	padding: 1em;
+	display: inline-block;
+	border: 3px solid black;
 	text-align: center;
-	font-style: italic;
 }
 
 .gallery h1{

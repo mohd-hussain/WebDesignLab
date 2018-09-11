@@ -9,11 +9,12 @@
        
     </head>
     <body>
+         @yield('navbar')
         @yield('content')
         <script  src="{{asset('js/app.js')}}" type="text/javascript"></script>
         <script  src="{{asset('js/bootstrap.js')}}" type="text/javascript"></script>
 
         @yield('scripts')
-
+         @yield('footer')
     </body>
 </html>
