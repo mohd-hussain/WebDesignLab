@@ -16,11 +16,11 @@ function fix_email($email){
 	return $email;
 }
 
-function fix_address($adress){
-	$adress=trim($adress);
-	$adress=ucfirst($adress);
-	$$adress=addslashes($adress);
-	return $adress;
+function fix_address($address){
+	$adress=trim($address);
+	$adress=ucfirst($address);
+	$$adress=addslashes($address);
+	return $address;
 }
 
 function fix_rollno($rollno){
@@ -30,9 +30,9 @@ function fix_rollno($rollno){
 	return $rollno;
 }
 
-$link=null;
 
-function connectdB(){
+
+/*function connectdB(){
 
 	$db_host="localhost";
 

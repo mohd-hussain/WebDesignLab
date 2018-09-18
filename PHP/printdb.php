@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Your Registration Info</title>
+    <title>Your Registration Info</title>
 
-	<style>
-		table{
-			border: 2px solid black;
-			margin-top: 50px;
-		}
-		table td{
-			padding:4px;
-		}
-		table tr:nth-child(odd){
-			background-color:#e1a45f;}
+    <style>
+        table{
+            border: 2px solid black;
+            margin-top: 50px;
+        }
+        table td{
+            padding:2px;
+            height: 30px;
+        }
+        table tr:nth-child(odd){
+            background-color:#e1a45f;}
 
-		table tr:nth-child(even){
-			background-color:#8f94a0;  
-		}
-	</style>
+        table tr:nth-child(even){
+            background-color:#8f94a0;  
+        }
+    </style>
 </head>
 
 <body>
@@ -63,7 +64,7 @@ if($_POST){
         }
         else{
             ?>
-            <table>
+            <table align="center">
             <?php
             while ($row = mysqli_fetch_array($result)) {           
         
@@ -94,7 +95,7 @@ if($_POST){
             </tr>
             <tr>
                 <td>Email</td>
-                <td><?php echo $row['email'];?></td>
+                <td><?php echo $row['semail'];?></td>
             </tr>
             <tr>
                 <td>Department</td>
@@ -105,9 +106,9 @@ if($_POST){
                 <td><?php echo $row['batch'];?></td>
             </tr>
         
-<?php        
+       
       }
-      ?></table>
+     </table>
   <?php      
     }
   }
@@ -122,3 +123,4 @@ else{
 ?>
     </body>
 </html>
+

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>MY PHP EXAMPLE AT AIKTC</title>
+	<title> PHP EXAMPLE</title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
    			if($_POST){
    				$username=$_POST['username'];
    				$brand=$_POST['brand'];
-   				echo "Thank You, $username You have voted for $brand";
+   				echo "Thank You, <b>$username</b> You have voted for <b>$brand</b>";
    			}	
    			else{
    				echo <<<_END
@@ -30,12 +30,11 @@
 					<br><lable><input type="radio" name="brand" value="Apple"/>Apple<br></lable>
 
 					<br><lable><input type="radio" name="brand" value="Samsung"/>Samsung<br></lable>
-
 					<br><lable><input type="radio" name="brand" value="Htc"/>Htc<br></lable>
 
 					<br><lable><input type="radio" name="brand" value="Asus"/>Asus<br></lable>
 
-					<br><lable><input type="submit" name="brand" value="vote"/><br></lable>
+					<br><lable><input type="submit"  value="Vote"/><br></lable>
  
    					</form>
 _END;

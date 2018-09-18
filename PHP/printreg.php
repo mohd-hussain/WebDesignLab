@@ -3,18 +3,25 @@
     <head>
         <title>Your Registration Info</title>
         <style>
+            body{
+
+            }
             table{
                 border: 2px solid black;
+                margin-top: 50px;
             }
             table td{
-                padding: 2px;
+                padding: 15px;
             }
             table tr:nth-child(odd){
-                background-color: yellow;
+                background-color:#e1a45f;
+          }
+            table tr:nth-child(even){
+                background-color:#8f94a0;
             }
         </style>
     </head>
-    <body>
+<body>
 <?php
 require_once 'functions.php';
 if($_POST){
@@ -32,7 +39,7 @@ if($_POST){
             !empty($semail)&&!empty($dept)&&!empty($batch)){
         
      ?>
-        <table>
+        <table align="center">
             <tr>
                 <td>Roll No</td>
                 <td><?php echo fix_rollno($rollno);?></td>
@@ -81,5 +88,5 @@ else{
     header('Refresh:0, url= ../registration.html');
 }
 ?>
-    </body>
+</body>
 </html>
