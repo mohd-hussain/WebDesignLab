@@ -2,16 +2,16 @@
 <nav>
     <ul>
         <li>
-            <a href="#" title="About ME">Home</a>
+            <a href="/" title="About ME">Home</a>
         </li>
         <li>
-            <a href="#" title="RESUME!">Resume!</a>
+            <a href="resume" title="RESUME!">Resume!</a>
         </li>
         <li>
             <a href="#" title="My Blog">BLOG</a>
         </li>
         <li>
-            <a href="#" title="Gallery">Gallery</a>
+            <a href="gallery" title="Gallery">Gallery</a>
         </li>
         <li>
             <a href="#" title="Contact">Contact</a>
