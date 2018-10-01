@@ -73,6 +73,8 @@
             &copy;2018 All rights reserved - Mohammed Hussain 
         </div>
     </footer>
+    <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
     <script src="JS/misc.js" type="text/javascript"></script>
+
 </body>
 </html>
